@@ -14,3 +14,14 @@ arrayvuoto.push(10)
 arrayvuoto[arrayvuoto.length - 1] = 100
 
 console.log(arrayvuoto)
+
+let totalShoppingCart = 51
+
+let prezzoFinaleBlackFriday = totalShoppingCart -= (totalShoppingCart * 0.2)
+
+if (prezzoFinaleBlackFriday <= 50) {
+    console.log("Black Friday! Hai ricevuto uno sconto del 20%. Il totale è " + prezzoFinaleBlackFriday + " + 10€ spedizione. Totale complessivo " + (prezzoFinaleBlackFriday + 10) + "€")
+}
+else {
+    console.log("Black Friday! Hai ricevuto uno sconto del 20%. La spedizione è in omaggio perchè hai speso più di 50€. Il totale complessivo è " + prezzoFinaleBlackFriday)
+}
